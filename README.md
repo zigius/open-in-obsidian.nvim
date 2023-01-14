@@ -38,3 +38,7 @@ EOF
 </details>
 
 &nbsp;
+
+### ⚒️ Usage
+
+The plugin exposes the `Obsidian` command. 
