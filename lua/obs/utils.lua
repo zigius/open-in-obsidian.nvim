@@ -10,6 +10,16 @@ M.get_git_relative_path = function()
   return relative_path
 end
 
+M.get_git_root_folder = function()
+  -- Get the path of the root git repository
+  local git_root_path = vim.api.nvim_call_function("system", {"git rev-parse --show-toplevel"}):gsub("\n", "")
+  local git_root_folder = string.match(git_root_path, "([^/]+)/?$")
+  return git_root_folder
+end
+
+-- vim.pretty_print(M.get_git_root_folder())
+
 return M
+
 
 
