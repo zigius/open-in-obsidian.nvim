@@ -18,7 +18,7 @@ Install the plugin with your favourite package manager:
 use({
 	"zigius/open-in-obsidian.nvim",
 	config = function()
-		 require("open-in-obsidian.nvim")
+		 require("obs")
 	end,
 })
 ```
@@ -31,7 +31,7 @@ use({
 ```vim
 Plug 'zigius/open-in-obsidian.nvim',
 lua << EOF
-	require("open-in-obsidian.nvim")
+	require("obs")
 EOF
 ```
 
